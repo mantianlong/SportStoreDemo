@@ -34,7 +34,7 @@ namespace SportsStore.WebUI.Infrastructure
                 new Product { Name = "Surf board", Price = 179},
                 new Product { Name = "Running shoes", Price = 95}
             }.AsQueryable());
-            ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object);
+            ninjectKernel.Bind<IProductRepository>().ToConstant(mock.Object)  ;
         }
     }
 }
